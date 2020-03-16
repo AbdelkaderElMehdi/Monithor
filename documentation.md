@@ -46,7 +46,7 @@ Le Back-office de l'application est structure comme suit :
   - un id calculé en fonction d'un hash d'attribut pour faciliter la définition du `.equals()` .
 - Chaque ressource possede quelque méthodes clés :
   - `getLifeState() ` : Permet de faire un appel récursif vers l'ensemble des dependance pour avoir leurs lifeState et faire un Et-Logique avec la totalité de l'arbre.
-  -`resolveDependencies` : Permet dans le cas d'un probleme de retourner une liste des ressources qui crachent.
+  - `resolveDependencies` : Permet dans le cas d'un probleme de retourner une liste des ressources qui crachent.
 
 
 
