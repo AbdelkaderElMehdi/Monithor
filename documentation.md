@@ -34,7 +34,7 @@ Trouver une librairie pour la visualisation de Graphs (Grossomodo pour afficher 
 - IDontKnow.js pour la visualisation de graph. 
 ## Architecture de base (en évolution)
 
-[Class diagram](https://github.com/AbdelkaderElMehdi/Monithor/blob/master/Diagrammedeclasses.png "Diagramme de classe")
+![60% center](https://github.com/AbdelkaderElMehdi/Monithor/blob/master/Diagrammedeclasses.png "Diagramme de classe")
 
 Le Back-office de l'application est structure comme suit :
 - Tout est une ressource : l'appel à un endPoint d'Api-REST ou 
