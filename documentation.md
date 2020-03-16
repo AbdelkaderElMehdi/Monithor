@@ -37,7 +37,16 @@ Trouver une librairie pour la visualisation de Graphs (Grossomodo pour afficher 
 ![60% center](https://github.com/AbdelkaderElMehdi/Monithor/blob/master/Diagrammedeclasses.png "Diagramme de classe")
 
 Le Back-office de l'application est structure comme suit :
-- Tout est une ressource : l'appel à un endPoint d'Api-REST ou 
+- Tout est une ressource : l'appel à un endPoint d'Api-REST ou à un service de stockage de données, ces ressource sont identifié par leurs types respectif (EndPoint ou un accés à MongoDB ... RabbitMQ), pour chaque ressource, elle possede :
+  - un url.
+  - un port.
+  - un nom.
+  - un état pour en marche ou pas.
+  - un ensemble de dépendances qui sont elles-mêmes des ressources.
+  - un id calculé en fonction d'un hash d'attribut pour faciliter la définition du `.equals()` .
+- Chaque ressource possede quelque méthodes clés :
+  - `getLifeState() ` : Permet de faire un appel récursif vers l'ensemble des dependance pour avoir leurs lifeState et faire un Et-Logique avec la totalité de l'arbre.
+  -`resolveDependencies` : Permet dans le cas d'un probleme de retourner une liste des ressources qui crachent.
 
 
 
