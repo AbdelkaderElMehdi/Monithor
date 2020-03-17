@@ -27,16 +27,21 @@ Comment connaitre les dependances de chaque EndPoints:
 Trouver une librairie pour la visualisation de Graphs (Grossomodo pour afficher un arbre avec differents neouds).
 
 ## Technologies 
-- SpringBoot. Coté serveur.
-- Angular ? Coté client ??
+- SpringBoot pour le coté serveur.
+- Angular pour le client.
+- [Vis.js Networks](https://visjs.github.io/vis-network/docs/network/) pour visualiser les graphs et reseaux de dependances.
 - Elasticsearch/MongoDB pour le stockage ??
-- Kibana/Grafana ????
-- IDontKnow.js pour la visualisation de graph. 
+- Kibana/Grafana ??
+
 ## Architecture de base (en évolution)
+L'application sera découpé en :
+- Une application SpringBoot qui intéroge les differentes Apis et EndPoints avec un flux websocket pour communiquer au client les logs.
+- Un client Web Angular-8 avec Vis.js pour visualiser les Graphs de dépendances et l'états de tout les endPoints.
+- Une BD Mongo ou ElasticSearch pour centraliser et stocker les logs d'états des endpoints du cluster.
 
 ![60% center](https://github.com/AbdelkaderElMehdi/Monithor/blob/master/Diagrammedeclasses.png "Diagramme de classe")
 
-Le Back-office de l'application est structure comme suit :
+Le Model de données de l'application est structure comme suit :
 - Tout est une ressource : l'appel à un endPoint d'Api-REST ou à un service de stockage de données, ces ressource sont identifié par leurs types respectif (EndPoint ou un accés à MongoDB ... RabbitMQ), pour chaque ressource, elle possede :
   - un url.
   - un port.
