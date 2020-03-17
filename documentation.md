@@ -43,7 +43,7 @@ L'application sera découpé en :
 
 Le Model de données de l'application est structure comme suit :
 - Tout est une ressource : l'appel à un endPoint d'Api-REST ou à un service de stockage de données, ces ressource sont identifié par leurs types respectif (EndPoint ou un accés à MongoDB ... RabbitMQ), pour chaque ressource, elle possede :
-  - un url.
+  - un url..
   - un port.
   - un nom.
   - un état pour en marche ou pas.
