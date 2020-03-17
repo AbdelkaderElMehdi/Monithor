@@ -27,11 +27,12 @@ Comment connaitre les dependances de chaque EndPoints:
 Trouver une librairie pour la visualisation de Graphs (Grossomodo pour afficher un arbre avec differents neouds).
 
 ## Technologies 
-- SpringBoot pour le coté serveur.
-- Angular pour le client.
+- SpringBoot pour le coté serveur (+ Maven ) ( + Aop???) ( Actuator ?).
+- Angular pour le client. (+ redux)
 - [Vis.js Networks](https://visjs.github.io/vis-network/docs/network/) pour visualiser les graphs et reseaux de dependances.
 - Elasticsearch/MongoDB pour le stockage ??
 - Kibana/Grafana ??
+- La mitraille DevOps ( jenkins, sonarQube, Selenium, Docker, kubernetes, helm).
 
 ## Architecture de base (en évolution)
 L'application sera découpé en :
